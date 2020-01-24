@@ -1,16 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      dude wheres my car
-      heyyyyyy
-      where is this file?
-      saved?
-    </div>
-  );
+// Custom Components
+import Header from "../components/Header";
+import Locations from "../components/Locations";
+import Menu from "../components/Menu";
+import Store from "../components/Store";
+import Footer from "../components/Footer";
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <p>We're up and running</p>
+      </div>
+    );
+  }
 }
 
 export default App;
