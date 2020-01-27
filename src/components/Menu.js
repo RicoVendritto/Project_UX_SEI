@@ -26,7 +26,7 @@ class Menu extends Component {
       });
     }
   };
-  onClick = e => {
+  onHandle1 = e => {
     e.preventDefault();
     if (!this.state.menu) {
       this.setState({
