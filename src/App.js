@@ -5,6 +5,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Locations from "./components/Locations";
 import Menu from "./components/Menu";
+import Gallery from "./components/Gallery";
 import Store from "./components/Store";
 import Footer from "./components/Footer";
 
@@ -17,12 +18,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <p>We're up and running</p>
         <Header />
         <main>
-          
           <Locations />
           <Menu />
+          <Gallery />
           <Store />
         </main>
         <Footer />
