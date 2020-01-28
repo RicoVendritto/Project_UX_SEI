@@ -25,11 +25,10 @@ class Store extends Component {
   render() {
     console.log(this.state.products);
     return (
-      <div>
+      <section id="section-4">
         <h3>Store</h3>
         <div classname="store-container">
-          {/* <img className="arrow" src={left_arrow} alt="left-arrow" /> */}
-          <div className="store" id="store">
+          <div className="store">
             {this.state.apiDataLoaded ? (
               this.state.products.map((product, index) => (
                 <div className="store_item" key={index}>
@@ -51,7 +50,7 @@ class Store extends Component {
           </div>
           {/* <img className="arrow" src={right_arrow} alt="right-arrow" /> */}
         </div>
-      </div>
+      </section>
     );
   }
 }

@@ -17,7 +17,7 @@ const Slider = () => {
       <AutoplaySlider
         play={true}
         cancelOnInteraction={false}
-        interval={2000}
+        interval={3000}
         animation="cubeAnimation"
         cssModule={AwesomeSliderStyles}
       >

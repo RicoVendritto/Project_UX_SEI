@@ -29,16 +29,30 @@ class Header extends Component {
   }
 
   listenScrollEvent = e => {
-    console.log(window.location);
-    if (window.scrollY > 400) {
-      this.setState({color: 'black'})
-    } else {
-      this.setState({color: 'white'})
-    }
-  }
+    let mainNavLinks = document.querySelectorAll("nav a");
+    let mainSections = document.querySelectorAll("main section");
+    let lastId;
+    let cur = [];
+    window.addEventListener("scroll", event => {
+      let fromTop = window.scrollY;
+      console.log(fromTop);
+      mainNavLinks.forEach(link => {
+        let section = document.querySelector(link.hash);
+        console.log(section.offsetTop);
+        if (
+          section.offsetTop <= fromTop &&
+          section.offsetTop + section.offsetHeight > fromTop
+        ) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");
+        }
+      });
+    });
+  };
 
   componentDidMount() {
-    window.addEventListener('scroll', this.listenScrollEvent)
+    window.addEventListener("scroll", this.listenScrollEvent);
   }
 
   render() {
@@ -47,28 +61,28 @@ class Header extends Component {
         <h4 className="cash_only">CASH ONLY</h4>
         <img className="corner_logo" src={logo} alt="bar-logo" />
         <nav className="header_nav">
-          <a className="desktop_nav" href="#locations">
+          <a className="desktop_nav" href="#section-1">
             LOCATIONS
           </a>
-          <a className="mobile_nav" href="#locations">
+          <a className="mobile_nav" href="#section-1">
             <i>{location}</i>
           </a>
-          <a className="desktop_nav" href="#menu">
+          <a className="desktop_nav" href="#section-2">
             MENU
           </a>
-          <a className="mobile_nav" href="#menu">
+          <a className="mobile_nav" href="#section-2">
             <i>{menu}</i>
           </a>
-          <a className="desktop_nav" href="#gallery">
+          <a className="desktop_nav" href="#section-3">
             GALLERY
           </a>
-          <a className="mobile_nav" href="#gallery">
+          <a className="mobile_nav" href="#section-3">
             <i>{gallery}</i>
           </a>
-          <a className="desktop_nav" href="#store">
+          <a className="desktop_nav" href="#section-4">
             STORE
           </a>
-          <a className="mobile_nav" href="#store">
+          <a className="mobile_nav" href="#section-4">
             <i>{shop}</i>
           </a>
         </nav>

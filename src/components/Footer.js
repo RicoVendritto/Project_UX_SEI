@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="connect">
           <h4> Connect With Us! </h4>
           {/* <img src={all_in_one}> </img> */}
-          </div>
+        </div>
       </div>
     </footer>
   );
