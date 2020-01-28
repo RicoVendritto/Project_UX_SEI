@@ -1,0 +1,71 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  background: #000;
+} */
+
+@font-face {
+  font-family: neon;
+  src: url("../resources/neon/Neon.ttf");
+}
+
+.wrapper {
+  margin-top: 20vh;
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: neon;
+  font-size: 15rem;
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
+  margin: 0;
+  padding: 0;
+}
+
+h1 span {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.h1one span, .h1two span {
+  animation-delay: 0s;
+  color: #fff;
+    filter: blur(1px);
+    text-shadow: 0 0 10px #00b3ff, 0 0 10px #00b3ff, 0 0 20px #00b3ff,
+      0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 100px #00b3ff, 0 0 200px #00b3ff,
+      0 0 300px #00b3ff, 0 0 400px #00b3ff;
+}
+
+.h1two span:nth-child(6) {
+  animation-delay: 1s;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+  5%,
+  95% {
+    color: #fff;
+    filter: blur(1px);
+    text-shadow: 0 0 10px #00b3ff, 0 0 10px #00b3ff, 0 0 20px #00b3ff,
+      0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 100px #00b3ff, 0 0 200px #00b3ff,
+      0 0 300px #00b3ff, 0 0 400px #00b3ff;
+  }
+}

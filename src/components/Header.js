@@ -3,6 +3,7 @@ import logo from "../resources/menu/cb_logo.png";
 
 // Custom Components
 import Slider from "./SliderHeader";
+import LogoInteractive from "./LogoInteractive";
 
 // Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -59,7 +60,8 @@ class Header extends Component {
     return (
       <header className="header">
         <h4 className="cash_only">CASH ONLY</h4>
-        <img className="corner_logo" src={logo} alt="bar-logo" />
+        {/* <img className="corner_logo" src={logo} alt="bar-logo" /> */}
+        <LogoInteractive />
         <nav className="header_nav">
           <a className="desktop_nav" href="#section-1">
             LOCATIONS
