@@ -39,13 +39,14 @@ h1 span {
   background: transparent;
 }
 
-.h1one span, .h1two span {
+.h1one span,
+.h1two span {
   animation-delay: 0s;
   color: #fff;
-    filter: blur(1px);
-    text-shadow: 0 0 10px #00b3ff, 0 0 10px #00b3ff, 0 0 20px #00b3ff,
-      0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 100px #00b3ff, 0 0 200px #00b3ff,
-      0 0 300px #00b3ff, 0 0 400px #00b3ff;
+  filter: blur(1px);
+  text-shadow: 0 0 10px #00b3ff, 0 0 10px #00b3ff, 0 0 20px #00b3ff,
+    0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 100px #00b3ff, 0 0 200px #00b3ff,
+    0 0 300px #00b3ff, 0 0 400px #00b3ff;
 }
 
 .h1two span:nth-child(6) {
@@ -67,5 +68,24 @@ h1 span {
     text-shadow: 0 0 10px #00b3ff, 0 0 10px #00b3ff, 0 0 20px #00b3ff,
       0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 100px #00b3ff, 0 0 200px #00b3ff,
       0 0 300px #00b3ff, 0 0 400px #00b3ff;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 5.5rem;
+  }
+  .wrapper {
+    height: 10vh;
+    margin-top: 5vh;
+  }
+  .section-1 {
+    margin-top: 1vh;
+  }
+  .awesome-slider {
+    z-index: -5;
   }
 }

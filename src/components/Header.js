@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../resources/menu/cb_logo.png";
+// import logo from "../resources/menu/cb_logo.png";
 
 // Custom Components
 import Slider from "./SliderHeader";
@@ -31,9 +31,9 @@ class Header extends Component {
 
   listenScrollEvent = e => {
     let mainNavLinks = document.querySelectorAll("nav a");
-    let mainSections = document.querySelectorAll("main section");
-    let lastId;
-    let cur = [];
+    // let mainSections = document.querySelectorAll("main section");
+    // let lastId;
+    // let cur = [];
     window.addEventListener("scroll", event => {
       let fromTop = window.scrollY;
       console.log(fromTop);
