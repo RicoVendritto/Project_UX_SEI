@@ -26,9 +26,9 @@ class Store extends Component {
     console.log(this.state.products);
     return (
       <section id="section-4">
-        <h3>Store</h3>
         <div classname="store-container">
           <div className="store">
+            <h3>Store</h3>
             {this.state.apiDataLoaded ? (
               this.state.products.map((product, index) => (
                 <div className="store_item" key={index}>

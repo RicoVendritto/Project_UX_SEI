@@ -13,19 +13,21 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 const Slider = () => {
   return (
-    <div className="awesome_slider">
-      <AutoplaySlider
-        play={true}
-        cancelOnInteraction={false}
-        interval={3000}
-        animation="cubeAnimation"
-        cssModule={AwesomeSliderStyles}
-      >
-        <div data-src={slider_1} />
-        <div data-src={slider_2} />
-        <div data-src={slider_3} />
-        <div data-src={slider_4} />
-      </AutoplaySlider>
+    <div className="awesome_opacity">
+      <div className="awesome_slider">
+        <AutoplaySlider
+          play={true}
+          cancelOnInteraction={false}
+          interval={3000}
+          animation="cubeAnimation"
+          cssModule={AwesomeSliderStyles}
+        >
+          <div data-src={slider_1} />
+          <div data-src={slider_2} />
+          <div data-src={slider_3} />
+          <div data-src={slider_4} />
+        </AutoplaySlider>
+      </div>
     </div>
   );
 };

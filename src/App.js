@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <main>
+        <main className="content">
           <Locations />
           <Menu />
           <Gallery />

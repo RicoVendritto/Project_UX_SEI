@@ -12,24 +12,48 @@ const Gallery = () => {
       <div className="gallery">
         <h3>Gallery</h3>
         <div className="grid-container">
-          <img
-            className="grid-element pic1"
-            src={burger1}
-            alt="grid-element-1"
-          />
-          <img className="grid-element pic2" src={pic1} alt="grid-element-2" />
-          <img className="grid-element pic3" src={pic5} alt="grid-element-3" />
-          <img
-            className="grid-element pic4"
-            src={burger6}
-            alt="grid-element-4"
-          />
-          <img className="grid-element pic5" src={pic6} alt="grid-element-5" />
-          <img
-            className="grid-element pic6"
-            src={burger5}
-            alt="grid-element-6"
-          />
+          <div className="card card1">
+            <img
+              className="grid-element pic1"
+              src={burger1}
+              alt="grid-element-1"
+            />
+          </div>
+          <div className="card card2">
+            <img
+              className="grid-element pic2 card"
+              src={pic1}
+              alt="grid-element-2"
+            />
+          </div>
+          <div className="card card3">
+            <img
+              className="grid-element pic3 card"
+              src={pic5}
+              alt="grid-element-3"
+            />
+          </div>
+          <div className="card card4">
+            <img
+              className="grid-element pic4 card"
+              src={burger6}
+              alt="grid-element-4"
+            />
+          </div>
+          <div className="card card5">
+            <img
+              className="grid-element pic5 card"
+              src={pic6}
+              alt="grid-element-5"
+            />
+          </div>
+          <div className="card card6">
+            <img
+              className="grid-element pic6 card"
+              src={burger5}
+              alt="grid-element-6"
+            />
+          </div>
         </div>
       </div>
     </section>
