@@ -68,7 +68,7 @@ class Navigation extends Component {
           <a href="#section-1">LOCATIONS</a>
           <a href="#section-2">MENU</a>
           <a href="#section-3">GALLERY</a>
-          <a href="#section-4">STORE</a>
+          <a href="#section-4">SHOP</a>
         </nav>
         <nav className="mobile_nav">
           <a href="#section-1">
