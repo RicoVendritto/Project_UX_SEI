@@ -123,7 +123,7 @@ class Locations extends React.Component {
                   alt="long-island-city"
                 />
               </div>
-              <h3 lassName="loc_title"> Long Island City</h3>
+              <h3 className="loc_title"> Long Island City</h3>
               <p className="loc">
                 47-18 Vernon Blvd,
                 <br />
@@ -147,7 +147,7 @@ class Locations extends React.Component {
                   alt="hells-kitchen"
                 />
               </div>
-              <h3 lassName="loc_title"> Hells Kitchen</h3>
+              <h3 className="loc_title"> Hells Kitchen</h3>
               <p className="loc">
                 600 11th Avenue
                 <br />

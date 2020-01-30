@@ -109,7 +109,7 @@ h3 {
     0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 10vw #e50b0b, 0.2vw 0vw 30vw #e50b0b,
     0.4vw 0vw 10vw #e50b0b;
   transform: scale(0, 1);
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .desktop_nav a:hover::after {
@@ -195,7 +195,7 @@ h3 {
 .in_loc::after {
   content: "";
   position: absolute;
-  top: 47vh;
+  top: 58vh;
   width: 24vw;
   border: 2px solid white;
   box-shadow: 0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
@@ -207,7 +207,7 @@ h3 {
     0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 10vw #e50b0b, 0.2vw 0vw 30vw #e50b0b,
     0.4vw 0vw 10vw #e50b0b;
   transform: scale(0, 1);
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .in_loc_active::after {
@@ -217,14 +217,15 @@ h3 {
 .location_container {
   height: 55vh;
   width: 28vw;
-  overflow: hidden;
   margin-bottom: 5vh;
+  z-index: 1;
 }
 
 .location_img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  z-index: 0;
 }
 
 .maps {
@@ -257,20 +258,54 @@ h3 {
 
 /* FOOD MENU FOOD MENU FOOD MENU FOOD MENU FOOD MENU FOOD MENU FOOD MENU FOOD MENU */
 
-.food_drink {
-  display: flex;
-  justify-content: space-evenly;
-}
 .menu_ray {
   text-align: center;
 }
-.menu {
-  width: 60vw;
+
+.food_drink {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
 }
+
 .food_menu {
   display: flex;
   flex-direction: column;
   width: 10vw;
+}
+
+.food_menu h3 {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+.food_menu h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1.5vh;
+  width: 100%;
+  border: 2px solid white;
+  box-shadow: 0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
+    0.4vw 0vw 0.25vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.2vw 0vw 0vw #f25757,
+    0.4vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.2vw 0vw 0.1vw #f25757,
+    0.4vw 0vw 0.1vw #f25757, 0.1vw 0vw 2vw #f25757, 0.2vw 0vw 2vw #f25757,
+    0.4vw 0vw 2vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
+    0.4vw 0vw 5vw #e50b0b, 0.1vw 0vw 5vw #e50b0b, 0.2vw 0vw 20vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 10vw #e50b0b, 0.2vw 0vw 30vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b;
+  transform: scale(0, 1);
+  transition: transform 0.5s ease;
+}
+
+.menu_active h3::after {
+  transform: scale(1, 1);
+}
+
+.menu {
+  width: 60vw;
+  transition: 0.5s ease-in;
 }
 
 /* GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY */
@@ -367,15 +402,15 @@ h3 {
 }
 
 .card::before {
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
   transform: scale(0, 1);
   z-index: 5;
 }
 
 .card::after {
-  border-left: 5px solid white;
-  border-right: 5px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
   transform: scale(1, 0);
   z-index: 5;
 }
@@ -425,7 +460,7 @@ h3 {
 }
 
 .store_item p {
-  font-family: 'Roboto', 'sans-serif';
+  font-family: "Roboto", "sans-serif";
   font-weight: 300;
   font-size: 1em;
   margin: 0;
@@ -439,7 +474,7 @@ h3 {
   color: orange;
   border-radius: 25px;
   font-size: 1.5rem;
-  font-family: 'Roboto', 'sans-serif';
+  font-family: "Roboto", "sans-serif";
   font-weight: 300;
   font-size: 1.3em;
   margin: 0;
@@ -545,10 +580,50 @@ h3 {
     color: blueviolet;
   }
 
+  /* LOCATION SECTION LOCATION SECTION LOCATION SECTION */
+
+  .location_container {
+    height: 30vh;
+  }
+
+  .in_loc::after {
+    content: "";
+    position: absolute;
+    top: 33vh;
+    width: 24vw;
+  }
+
+  .loc_title {
+    font-size: 1.2em;
+    text-align: left;
+    padding-left: 2vw;
+  }
+
+  .loc {
+    font-size: 1em;
+  }
+
   /* MENU SECTION  MENU SECTION  MENU SECTION  MENU SECTION  MENU SECTION */
 
   .menu {
     width: 95vw;
+  }
+
+  .food_drink {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+  }
+
+  .food_menu h3 {
+    font-size: 1.5em;
+    text-align: center;
+    width: 30vw;
+    /* margin: 0;
+    padding: 0; */
   }
 
   /* GALLERY SECTION GALLERY SECTION GALLERY SECTION GALLERY SECTION GALLERY SECTION */
