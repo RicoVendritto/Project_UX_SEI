@@ -1,52 +1,92 @@
 .wrapper {
-    height: 75vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10vh auto;
+  height: 75vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh auto;
+}
+
+#cb_logo {
+  height: 60%;
+  width: 60%;
+}
+
+#cb_logo path {
+  /* filter: url(#glow); */
+  fill: #ffffff;
+}
+
+.filter {
+  filter: drop-shadow(
+    0.1vw 0vw 0.25vw #ffd8d8,
+    0.2vw 0vw 0.25vw #ffd8d8,
+    0.4vw 0vw 0.25vw #ffd8d8,
+    0.1vw 0vw 0vw #f25757,
+    0.2vw 0vw 0vw #f25757,
+    0.4vw 0vw 0vw #f25757,
+    0.1vw 0vw 0.1vw #f25757,
+    0.2vw 0vw 0.1vw #f25757,
+    0.4vw 0vw 0.1vw #f25757,
+    0.1vw 0vw 2vw #f25757,
+    0.2vw 0vw 2vw #f25757,
+    0.4vw 0vw 2vw #f25757,
+    0.1vw 0vw 1vw #e50b0b,
+    0.2vw 0vw 1vw #e50b0b,
+    0.4vw 0vw 5vw #e50b0b,
+    0.1vw 0vw 5vw #e50b0b,
+    0.2vw 0vw 20vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b,
+    0.1vw 0vw 10vw #e50b0b,
+    0.2vw 0vw 30vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b
+  );
+}
+
+.flicker {
+  animation: flicker 5s ease infinite;
+}
+
+@keyframes flicker {
+  0%,
+  33%,
+  66%,
+  100% {
+    fill: none;
+    stroke: none;
+  }
+  5%,
+  25%,
+  50%,
+  75%,
+  95% {
+    stroke: #ff4739;
+    fill: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 5.5rem;
   }
 
   #cb_logo {
-      height: 60%;
-      width: 60%;
+    height: 100%;
+    width: 100%;
   }
 
-  #cb_logo path {
-      /* filter: url(#glow); */
-      fill: #ffffff;
+  .wrapper {
+    height: 15vh;
+    margin-top: 2vh;
   }
-
-  .filter {
-    filter: drop-shadow(0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
-    0.4vw 0vw 0.25vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.2vw 0vw 0vw #f25757,
-    0.4vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.2vw 0vw 0.1vw #f25757,
-    0.4vw 0vw 0.1vw #f25757, 0.1vw 0vw 2vw #f25757, 0.2vw 0vw 2vw #f25757,
-    0.4vw 0vw 2vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
-    0.4vw 0vw 5vw #e50b0b, 0.1vw 0vw 5vw #e50b0b, 0.2vw 0vw 20vw #e50b0b,
-    0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 10vw #e50b0b, 0.2vw 0vw 30vw #e50b0b,
-    0.4vw 0vw 10vw #e50b0b)
+  .section-1 {
+    margin-top: 1vh;
   }
-  
-  .flicker {
-    animation: flicker 5s ease infinite;
+  .awesome-slider {
+    z-index: -5;
   }
-  
-  @keyframes flicker {
-    0%,
-    33%,
-    66%,
-    100% {
-      fill: none;
-      stroke: none;
-    }
-    5%,
-    25%,
-    50%,
-    75%,
-    95% {
-      stroke: #ff4739;
-      fill: #ffffff;
-    }
-  }
+}
