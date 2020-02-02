@@ -127,7 +127,7 @@ h3 {
   transform: translateX(-50%);
   width: 100vw;
   padding: 0vh 25vw;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8)
 }
 
 .mobile_nav {
