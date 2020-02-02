@@ -320,7 +320,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(5, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(8, 20vh));
-  grid-auto-rows: 30vh;
+  grid-auto-rows: 20vh;
   grid-auto-columns: 1fr;
   grid-gap: 10px;
   margin: 2vh 2vw;
@@ -515,6 +515,59 @@ h3 {
   align-items: center;
   text-align: center;
   justify-content: space-between;
+}
+
+.footer_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.grub_footer {
+  height: 4vh;
+}
+
+.doordash_footer {
+  height: 4vh;
+}
+
+.seamless_footer {
+  height: 8vh;
+}
+
+.yelp_footer {
+  height: 8vh;
+  /* filter: invert(100%); */
+}
+
+.tny_footer {
+  height: 6vh;
+  filter: invert(100%);
+}
+
+.tonyc_footer {
+  height: 10vh;
+}
+
+.footer_logo_left {
+  margin: 2vh auto;
+}
+
+.footer_logo_right {
+  margin: 1vh auto;
+}
+
+.footer_button {
+  color: white;
+  background-color: red;
+  height: 5vh;
+  width: 10vw;
+  margin-top: 2vh;
+}
+
+.social-media {
+  height: 10vh;
 }
 
 /* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES */
