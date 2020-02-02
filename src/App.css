@@ -449,7 +449,16 @@ h3 {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  position: relative;
 }
+
+/* .arrow_right {
+  position: fixed;
+  right: 0;
+  top: 18vh;
+  height: 15vh;
+  z-index: 5;
+} */
 
 .store_item {
   height: 40vh;

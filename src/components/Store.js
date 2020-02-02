@@ -3,7 +3,7 @@ import React, { Component } from "react";
 // Custom Component
 import ApiCall from "../services/api_helper";
 // import left_arrow from "../resources/menu/left_arrow.png";
-// import right_arrow from "../resources/menu/right_arrow.png";
+import right_arrow from "../resources/menu/right_arrow.png";
 
 class Store extends Component {
   constructor(props) {
@@ -29,6 +29,7 @@ class Store extends Component {
         <div classname="store-container">
           <h3>Shop</h3>
           <div className="store">
+            {/* <img className="arrow_right" src={right_arrow} alt="right-arrow" /> */}
             {this.state.apiDataLoaded ? (
               this.state.products.map((product, index) => (
                 <div className="store_item" key={index}>
