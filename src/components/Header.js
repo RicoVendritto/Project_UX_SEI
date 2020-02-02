@@ -2,9 +2,10 @@ import React from "react";
 
 // Custom Components
 import Slider from "./SliderHeader";
-// import LogoInteractive from "./LogoInteractive";
+import LogoInteractive from "./LogoInteractive";
 import Navigation from "./Navigation";
 import LogoMonica from "./LogoMonica";
+import Logo_CB from "../resources/icons/animate-logo-o.png";
 
 const Header = () => {
   return (
