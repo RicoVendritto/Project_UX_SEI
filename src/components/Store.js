@@ -27,7 +27,7 @@ class Store extends Component {
     return (
       <section id="section-4">
         <div classname="store-container">
-        <h3>Shop</h3>
+          <h3>Shop</h3>
           <div className="store">
             {this.state.apiDataLoaded ? (
               this.state.products.map((product, index) => (
@@ -40,8 +40,10 @@ class Store extends Component {
                     />
                   </div>
                   <p>{product.product_name}</p>
-                  <p>{product.product_price}</p>
-                  <button onClick={e => alert("BUYING THAT SHIT")}>add to cart</button>
+                  <p>$ {product.product_price}</p>
+                  <button onClick={e => alert("Item is added to your cart")}>
+                    add to cart
+                  </button>
                 </div>
               ))
             ) : (

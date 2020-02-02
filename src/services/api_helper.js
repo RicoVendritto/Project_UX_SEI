@@ -16,6 +16,11 @@ const ApiCall = props => {
       product_price: 27.69
     },
     {
+      product_image: "https://i.ibb.co/dthRF5C/product-15.png",
+      product_name: "Classic Thong",
+      product_price: 13.99
+    },
+    {
       product_image: "https://i.ibb.co/4JMDtL0/product-4.jpg",
       product_name: "Bistro Pint Glass",
       product_price: 15.89
@@ -33,7 +38,7 @@ const ApiCall = props => {
     {
       product_image: "https://i.ibb.co/MGywm0p/product-7.png",
       product_name: "Black Cap",
-      product_price: 20.00
+      product_price: 20.0
     },
     {
       product_image: "https://i.ibb.co/gWVQZy5/product-8.jpg",
