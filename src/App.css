@@ -117,6 +117,7 @@ h3 {
 }
 
 .navigation {
+  margin-top: -5vh;
   z-index: 5;
 }
 
