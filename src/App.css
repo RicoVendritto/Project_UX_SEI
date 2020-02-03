@@ -248,6 +248,14 @@ h3 {
   text-align: left;
 }
 
+.hours {
+  font-family: "Roboto", "sans-serif";
+  font-size: 1rem;
+  font-weight: 100;
+  width: 20vw;
+  text-align: left;
+}
+
 .mapped {
   width: 95vw;
   height: 50vh;
@@ -742,10 +750,27 @@ h3 {
   /* FOOTER SECTION FOOTER SECTION FOOTER SECTION FOOTER SECTION FOOTER SECTION */
 
   .footer {
-    height: 50vh;
+    /* height: 50vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
   }
 
   .footer_items {
-    display: none;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer_button {
+    width: 50vw;
+  }
+
+  .press {
+    margin-bottom: 5vh;
   }
 }

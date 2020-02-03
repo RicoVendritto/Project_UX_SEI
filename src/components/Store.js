@@ -3,7 +3,7 @@ import React, { Component } from "react";
 // Custom Component
 import ApiCall from "../services/api_helper";
 // import left_arrow from "../resources/menu/left_arrow.png";
-import right_arrow from "../resources/menu/right_arrow.png";
+// import right_arrow from "../resources/menu/right_arrow.png";
 
 class Store extends Component {
   constructor(props) {

@@ -111,7 +111,11 @@ class Locations extends React.Component {
                 <br />
                 (212)242-9502
               </p>
-            </div>
+                <p className="hours">               
+              Monday - Saturday: 11:30 AM - 2 AM 
+              <p>Sunday: 12PM - 2AM</p>
+              </p>          
+              </div>
             <div
               onClick={this.onClick2}
               className={`in_loc ${this.state.display2}`}
@@ -135,7 +139,11 @@ class Locations extends React.Component {
                 <br />
                 (718)606-6500
               </p>
-            </div>
+ 
+              <p className="hours">             
+              Monday - Saturday: 11:30 AM - 2 AM 
+              <p>Sunday: 12PM - 2AM</p></p>           
+              </div>
             <div
               onClick={this.onClick3}
               className={`in_loc ${this.state.display3}`}
@@ -159,7 +167,12 @@ class Locations extends React.Component {
                 <br />
                 (212)582-2188
               </p>
-            </div>
+ 
+              <p className="hours"> 
+              Monday - Saturday: 11:30 AM - 2 AM 
+              <p>Sunday: 12PM - 2AM</p>
+              </p>           
+              </div>
           </div>
           <div className="maps">
             {this.state.maps1 && (
